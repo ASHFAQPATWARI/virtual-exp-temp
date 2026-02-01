@@ -90,6 +90,18 @@
           transform: rotate(360deg);
         }
       }
+
+      .qrcode-wrapper {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        z-index: 10;
+      }
+
+      .qrcode-wrapper img {
+        width: 150px;
+        height: 150px;
+      }
     </style>
   </head>
   <body>
@@ -240,6 +252,10 @@
         onload="document.getElementById('loading').style.display = 'none'"
       >
       </iframe>
+    </div>
+
+    <div class="qrcode-wrapper">
+      <img src="qrcode.png" alt="" />
     </div>
 
     <script>
